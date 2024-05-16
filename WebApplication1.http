@@ -1,0 +1,29 @@
+@WebApplication1_HostAddress = https://localhost:7260
+
+GET {{WebApplication1_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+POST {{WebApplication1_HostAddress}}/api/todoitems
+Content-Type: application/json
+
+{
+  "name": "walk dog",
+  "isComplete": true
+  "secret":"secret"
+}
+
+###
+
+GET {{WebApplication1_HostAddress}}/api/todoitems
+
+###
+
+GET {{WebApplication1_HostAddress}}/api/todoitems/1
+
+###
+
+GET {{WebApplication1_HostAddress}}/api/todoitems/1
+
+###
